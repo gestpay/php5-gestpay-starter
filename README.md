@@ -35,6 +35,21 @@ This repo uses the native SOAP extensions, present in PHP5+. If you are in a low
 6. Pay with one of the cards present in the *Notification* page.
 7. Once you have payed, you'll be redirected by Gestpay on `response.php` to see the outcome of the transaction.
 
+## Debugging
+
+If you want to see the request you send to Gestpay:
+
+1. Declare the SoapClient with the `trace` option set to true:
+
+```
+$client = new SoapClient($wsdl, array('trace' => 1));
+```
+
+2. write this line after the request:
+```
+echo "REQUEST:\n<pre>" . htmlentities($client->__getLastRequest()) . "</pre>\n";
+```
+
 ## Questions, Issues, etc.
 
 For any questions, open an issue on Github. We will gladly put off our mojito and answer.
