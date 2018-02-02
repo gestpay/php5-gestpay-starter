@@ -52,8 +52,8 @@ printIpAddress();
 
 //check where to connect: test or production environment?
 if ($test_env) {
-    $wsdl = "https://testecomm.sella.it/gestpay/gestpayws/WSCryptDecrypt.asmx?WSDL"; //TESTCODES
-    $action_pagamento = "https://testecomm.sella.it/pagam/pagam.aspx";
+    $wsdl = "https://sandbox.gestpay.net/gestpay/gestpayws/WSCryptDecrypt.asmx?WSDL"; //TESTCODES
+    $action_pagamento = "https://sandbox.gestpay.net/pagam/pagam.aspx";
 } else {
     $wsdl = "https://ecomms2s.sella.it/gestpay/gestpayws/WSCryptDecrypt.asmx?WSDL"; //PRODUCTION
     $action_pagamento = "https://ecomm.sella.it/pagam/pagam.aspx";

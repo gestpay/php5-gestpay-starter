@@ -9,7 +9,7 @@
 require('functions.php');
 displayErrors();
 
-$test_env = true;
+$test_env = true; 
 
 if ($test_env) {
 		$wsdl = "https://sandbox.gestpay.net/gestpay/gestpayws/WSCryptDecrypt.asmx?WSDL"; //TESTCODES 

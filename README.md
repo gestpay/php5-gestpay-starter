@@ -26,7 +26,7 @@ This repo uses the native SOAP extensions, present in PHP5+. If you are in a low
 
  with your `shopLogin`.
 2. start this webapp on a server with a public IP.
-3. Connect to your [test merchant back-office](https://testecomm.sella.it/BackOffice/) and login
+3. Connect to your [test merchant back-office](https://sandbox.gestpay.net/BackOffice/) and login
 4. In *Configuration* > *IP address*, insert the public IP of your server
 5. In the same page click on *Response Address* and insert:
 	- *URL for positive response*: `<<your_server_address>>/response.php`
